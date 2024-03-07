@@ -1,0 +1,18 @@
+{
+  "id": "zender_ParticleEngineInject",
+  "name": "ParticleEngineInject",
+  "author": "zender",
+  "version": "0.0.2",
+  "description": "Injecting Particle Engine into the game",
+  "gameVersion": "0.96a-RC10",
+  "dependencies": [
+    {
+      "id": "particleengine",
+      "name": "Particle Engine"
+    }
+  ],
+  "jars": [
+    "jars/zender_ParticleEngineInject.jar"
+  ],
+  "modPlugin": "zender.ParticleEngineInjectMainPlugin"
+}

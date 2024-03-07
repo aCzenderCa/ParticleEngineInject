@@ -1,0 +1,6 @@
+Set-Location D:\Games\Starsector96\mods\ParticleEngineInject
+Remove-Item -r D:\Games\Starsector96\tools\temp_build
+mkdir D:\Games\Starsector96\tools\temp_build
+D:\Games\Starsector96\jre-11\bin\javac -d "D:\Games\Starsector96\tools\temp_build" -encoding utf-8 -classpath "D:\Games\Starsector96\jre-11\lib\*;D:\Games\Starsector96\starsector-core\*;D:\Games\Starsector96\mods\MagicLib\jars\*; D:\Games\Starsector96\mods\LazyLib\jars\*;D:\Games\Starsector96\mods\LunaLib\jars\*;D:\Games\Starsector96\mods\GraphicsLib\jars\*" --add-exports=java.base/jdk.internal.vm.annotation=ALL-UNNAMED --add-exports=java.base/sun.net=ALL-UNNAMED --add-exports=java.base/sun.net.util=ALL-UNNAMED --add-exports=java.base/jdk.internal.misc=ALL-UNNAMED --add-exports=java.base/sun.net.www=ALL-UNNAMED --add-exports=java.base/jdk.internal.loader=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED --add-exports=java.base/java.nio=ALL-UNNAMED @D:\Games\Starsector96\mods\ParticleEngineInject\ParticleEngineInject_PreMain\buildList
+Write-Output "javac success"
+D:\Games\Starsector96\jre-11\bin\jar cfm D:\Games\Starsector96\starsector-core\ParticleEngineInject_PreMain.jar ParticleEngineInject_PreMain\MI\META-INF\MANIFEST.MF -C D:\Games\Starsector96\tools\temp_build\ \
